@@ -5,7 +5,7 @@
 //  Created by dong eun shin on 2022/01/23.
 //
 // 1. Indicator view ✅
-// 2. search bar - 검색어 감당하는 것 -> 비동기적으로? operationqueue
+// 2. search bar ✅
 // 3. detail view - webview ✅
 // 4. almofire ✅
 // 5. kingfisher ✅
@@ -17,6 +17,7 @@
 // 10. 정규표현식 x -> replace
 // 11. 날짜...
 // 12. 서치바 비활성화, 키보드 ✅
+// alomfire, nsmutableatrributedstring, kingfisher 정리
 import UIKit
 import Alamofire
 //import SwiftUI
@@ -72,7 +73,7 @@ class HomeViewController: UIViewController {
         return UICollectionViewCompositionalLayout { (sectionNumber, env) -> NSCollectionLayoutSection? in
             if sectionNumber == 0 {
                 let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1)))
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.8), heightDimension: .estimated(200)), subitems: [item])
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.9), heightDimension: .estimated(200)), subitems: [item])
                 group.contentInsets = .init(top: 0, leading: 5, bottom: 16, trailing: 5)
                 let section = NSCollectionLayoutSection(group: group)
                 section.orthogonalScrollingBehavior = .groupPaging

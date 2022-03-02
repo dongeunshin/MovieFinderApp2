@@ -205,7 +205,7 @@ extension SearchViewController: UISearchResultsUpdating {
     }
 }
 extension UIImageView {
-    
+
     func setImage(with urlString: String) {
         let cache = ImageCache.default
         cache.retrieveImage(forKey: urlString, options: nil) { result in
@@ -225,7 +225,6 @@ extension UIImageView {
                   }
         }
     }
-    
 }
 //        notificationToken = searchedMovie.observe { [unowned self] changes in
 //                    switch changes {
